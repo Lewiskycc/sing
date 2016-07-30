@@ -1,0 +1,80 @@
+body,html {
+    width: 100%;
+    /*高度100%  否则会出现滚动条*/
+    height: 100%;
+}
+.jd-category {
+    height: 100%;
+    padding-top: 45px;
+}
+.jd-cate-left {
+    width: 90px;
+    float: left;
+    height: 100%;
+    overflow: hidden;
+}
+.jd-cate-left ul {
+
+}
+.jd-cate-left ul li{
+    height: 50px;
+    line-height: 50px;
+    width: 90px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background: #f3f4f5;
+    text-align: center;
+}
+.jd-cate-left ul li a {
+    display: block;
+}
+.jd-cate-left ul li.now {
+    border-right: none;
+    background: none;
+}
+.jd-cate-left ul li.now a {
+    color: #D8505C;
+}
+/*右侧内容*/
+.jd-cate-right {
+    height: 100%;
+    overflow: hidden;
+}
+.jd-cate-right-con {
+    padding: 0 10px;
+}
+.jd-cate-right-con .banner {
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+}
+.jd-cate-right-con .banner img {
+    display: block;
+    width: 100%;
+}
+.cate-product {
+    margin-top: 10px;
+}
+.cate-product h3{
+    font-size: 12px;
+}
+.cate-product ul li {
+    width: 33.333%;
+    float: left;
+    text-align: center;
+}
+.cate-product ul li a {
+    width: 100%;
+    display: block;
+    padding-top: 10px;
+}
+.cate-product ul li a img {
+    width: 62px;
+    height: 62px;
+    display: block;
+    margin: 0 auto;
+}
+.cate-product ul li a p{
+    color: #666;
+}
+

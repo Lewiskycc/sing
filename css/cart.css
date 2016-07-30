@@ -1,0 +1,254 @@
+html,body {
+    width: 100%;
+    height: 100%;
+}
+/*安全提示*/
+.jd-safeTip {
+    height: 34px;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #fff;
+    line-height: 34px;
+    text-align: center;
+}
+.jd-safeTip p {
+    position: relative;
+    font-size: 12px;
+    color: #666;
+    display: inline-block;
+    padding-left: 23px;
+}
+.jd-safeTip p::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    background: url(../images/safe_icon.png) no-repeat;
+    -webkit-background-size: 18px 18px;
+    background-size: 18px 18px;
+    width: 18px;
+    height: 18px;
+}
+/*店铺区块*/
+.jd-shop {
+    margin-top: 10px;
+    border-top: 1px solid #ccc;
+    /*border-bottom: 1px solid #ccc;*/
+    background: #fff;
+}
+.jd-shop .jd-shop-tit {
+    height: 34px;
+    line-height: 34px;
+    position: relative;
+}
+/*复选框*/
+.jd-check-box {
+    display: block;
+    background: url(../images/shop-icon.png) no-repeat;
+    -webkit-background-size: 50px 100px;
+    background-size: 50px 100px;
+    width: 40px;
+    height: 34px;
+    padding: 7px 10px;
+    background-clip: content-box;
+    background-origin: content-box;
+}
+.jd-check-box[checked]{
+    background-position: -25px 0;
+}
+/*商品盒子*/
+.jd-product {
+    height: 100px;
+    border: 1px solid #ccc;
+    position: relative;
+    padding: 10px 0;
+}
+.left-con {
+    width: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.right-con {
+    padding-left: 40px;
+    width: 100%;
+    /*border-bottom: 1px solid #e0e0e0;*/
+}
+.right-con .shop-logo {
+    width: 15px;
+    height: 13px;
+    float: left;
+    margin-top: 10px;
+}
+.right-con .shop-name {
+    float: left;
+    margin-left: 10px;
+}
+.right-con .shop-tip {
+    float: right;
+    margin-right: 10px;
+    font-size: 12px;
+    color: #D8505C;
+}
+/*商品*/
+.product-img {
+    float: left;
+    width: 80px;
+    height: 80px;
+}
+.product-img img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.product-info {
+    overflow: hidden;
+    padding: 0 10px;
+}
+.product-info .info-name {
+    height: 30px;
+    line-height: 15px;
+    overflow: hidden;
+    display: block;
+}
+.product-info .info-price {
+    padding-top: 5px;
+    color: #D8505C;
+}
+/*数量区域*/
+.change-num {
+    float: left;
+}
+.change-num span {
+    border: 1px solid #ccc;
+    height: 24px;
+    width: 32px;
+    text-align: center;
+    line-height: 24px;
+    float: left;
+}
+.change-num span:first-of-type{
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+.change-num span:last-of-type{
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+.change-num input {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    height: 24px;
+    width: 32px;
+    text-align: center;
+    line-height: 24px;
+    float: left;
+}
+/*删除按钮*/
+.delete-btn {
+    float: right;
+}
+.delete-btn .delete-up {
+    height: 5px;
+    width: 20px;
+    background: url(../images/delete_up.png) no-repeat;
+    -webkit-background-size: 20px 5px;
+    background-size: 20px 5px ;
+    display: block;
+    margin-left: -1px;
+}
+.delete-btn .delete-down {
+    height: 18px;
+    width: 18px;
+    background: url(../images/delete_down.png) no-repeat;
+    -webkit-background-size: 18px 18px;
+    background-size: 18px 18px ;
+    display: block;
+    margin-top: -2px;
+}
+/*弹出框*/
+.jd-win {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.6);
+    display: none;
+}
+.jd-win-box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /*会调用硬件加速*/
+    width: 80%;
+    border-radius: 3px;
+    padding: 10px;
+    background-color: #fff;
+    transform: translate3d(-50%,-50%,0);
+    webkitTransform: translate3d(-50%,-50%,0);
+}
+.jd-win-box>.win-text {
+    font-size: 18px;
+    line-height: 75px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+.jd-win-box>.win-btn {
+    padding-top: 8px;
+}
+.jd-win-box>.win-btn>a {
+    display: block;
+    height: 36px;
+    width: 40%;
+    float: left;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.jd-win-box>.win-btn a:first-child{
+    border: 1px solid #ccc;
+    margin-right: 10%;
+}
+.jd-win-box>.win-btn a:last-child{
+    background: #D8505C;
+    color: #fff;
+}
+.jd-win-box.myBounceInDown {
+    -webkit-animation: myBounceInDown 1s;
+    animation: myBounceInDown 1s;
+}
+@keyframes myBounceInDown {
+    0% {
+        opacity: 0;
+        transform: translate3d(-50%,-1000%,0);
+        -webkit-transform: translate3d(-50%,-1000%,0);
+    }
+    60% {
+        opacity: 1;
+        transform: translate3d(-50%,-30%,0);
+        -webkit-transform: translate3d(-50%,-30%,0);
+    }
+    75% {
+        opacity: 1;
+        transform: translate3d(-50%,-40%,0);
+        -webkit-transform: translate3d(-50%,-40%,0);
+    }
+    90% {
+        opacity: 1;
+        transform: translate3d(-50%,-48%,0);
+        -webkit-transform: translate3d(-50%,-48%,0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(-50%,-50%,0);
+        -webkit-transform: translate3d(-50%,-50%,0);
+    }
+
+}
+
+
+
+
+
+

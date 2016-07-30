@@ -1,0 +1,119 @@
+/*reset css*/
+*,
+::after,::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+body {
+    font-size: 14px;
+    font-family: "microsoft YaHei","sans-serif";
+    color: #333;
+}
+ul,ol {
+    list-style: none;
+}
+input,textarea {
+    outline: none;
+    resize: none;
+    border: 0;
+    -webkit-appearance: inherit;
+    appearance: inherit;
+
+}
+img {
+    display: block;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+a:hover {
+    color: #333;
+}
+/*common css*/
+.clearfix::before,
+.clearfix::after {
+    display: block;
+    content: "";
+    /*visibility 能见的 可见的*/
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    line-height: 0;
+}
+.f_left {
+    float: left;
+}
+.f_right {
+    float: right;
+}
+[class ^="icon-"]{
+    background: url(../images/sprites.png) no-repeat;
+    background-size: 200px 200px; /*缩小一倍  让1px显示1个物理像素 不会模糊*/
+}
+.ml-10 {
+    margin-left: 10px;
+}
+.mr-10 {
+    margin-right: 10px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+.mt-10 {
+    margin-top: 10px;
+}
+.jd-topBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    background: url(../images/header-bg.png) repeat-x;
+    background-size: 1px 44px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.jd-topBar [class ^="icon-"]{
+    position: absolute;
+    top: 0;
+    width: 40px;
+    height: 44px;
+    padding: 12px 10px;
+    /*要将图标定位在通栏中间 但是背景在精灵图中很大*/
+    /*裁剪到内容 然后将背景原点定位在内容*/
+    background-clip: content-box;
+    background-origin: content-box;
+}
+.icon-back {
+    left: 0;
+    background-position: -20px 0;
+}
+.icon-menu {
+    right: 0;
+    background-position: -60px 0;
+}
+.jd-topBar form {
+    width: 100%;
+    padding: 0 40px ;
+}
+.jd-topBar form input {
+    width: 100%;
+    height: 30px;
+    margin-top: 7px;
+    border-radius: 4px;
+    padding: 0 5px;
+    border: 1px solid #ccc;
+}
+.jd-topBar.static {
+    position: static;
+}
+.jd-topBar h3 {
+    font-weight: normal;
+    line-height: 44px;
+    text-align: center;
+}
+
+

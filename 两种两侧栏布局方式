@@ -1,0 +1,7 @@
+1、左侧定位 不占位置  右侧占满整个屏幕给padding
+2、左侧浮动 右侧overflow 绝缘，右侧就会自适应
+小知识
+背景定位  需要裁剪 背景原点定位
+touches 数组
+targettouches 数组
+changedTouches 数组  在touchend中也会触发
